@@ -1,0 +1,7 @@
+{
+    "name": "agendagoogleeventos",
+    "dependencies": {
+        "express": "*",
+        "googleapis": "*"
+    }
+}

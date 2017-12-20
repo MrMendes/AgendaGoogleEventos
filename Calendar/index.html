@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Calendar</title>
+    <link rel='stylesheet' href='js/fullcalendar.css' />
+    <script src='js/lib/jquery.min.js'></script>
+    <script src='js/lib/moment.min.js'></script>
+    <script src='js/fullcalendar.js'></script>
+    <script type='text/javascript' src='js/gcal.js'></script>
+    <script type='text/javascript'>
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+            googleCalendarApiKey: 'AIzaSyCKXu5uqYs7sXcJSaOtswJ5QgmadphQgyE',
+            events: {
+                googleCalendarId: '0oub93mego8stpf5e5qqomcqpc@group.calendar.google.com',
+                className: 'gcal-event'
+            },
+            header: {
+                left: 'prev,next today myCustomButton',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            }
+        });
+    });
+    </script>
+
+</head>
+
+
+<body>
+    <div id="calendar"></div>
+    
+</body>
